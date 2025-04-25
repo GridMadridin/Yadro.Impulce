@@ -1,0 +1,303 @@
+Simulator report for kurs_Sxem
+Wed Apr 23 18:32:55 2025
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |Block2|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_0k71:auto_generated|ALTSYNCRAM
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 103 nodes    ;
+; Simulation Coverage         ;      18.45 % ;
+; Total Number of Transitions ; 338          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++-----------------------------------------------------------------------------------------------------+
+; |Block2|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_0k71:auto_generated|ALTSYNCRAM ;
++-----------------------------------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      18.45 % ;
+; Total nodes checked                                 ; 103          ;
+; Total output ports checked                          ; 103          ;
+; Total output ports with complete 1/0-value coverage ; 19           ;
+; Total output ports with no 1/0-value coverage       ; 15           ;
+; Total output ports with no 1-value coverage         ; 51           ;
+; Total output ports with no 0-value coverage         ; 48           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                    ;
++------------------------------+------------------------------+------------------+
+; Node Name                    ; Output Port Name             ; Output Port Type ;
++------------------------------+------------------------------+------------------+
+; |Block2|mode                 ; |Block2|mode                 ; out              ;
+; |Block2|clk                  ; |Block2|clk                  ; out              ;
+; |Block2|data[3]              ; |Block2|data[3]              ; out              ;
+; |Block2|data[2]              ; |Block2|data[2]              ; out              ;
+; |Block2|data[1]              ; |Block2|data[1]              ; out              ;
+; |Block2|data[0]              ; |Block2|data[0]              ; out              ;
+; |Block2|ram_we               ; |Block2|ram_we               ; out              ;
+; |Block2|ram_oe               ; |Block2|ram_oe               ; out              ;
+; |Block2|load                 ; |Block2|load                 ; out              ;
+; |Block2|addr[2]              ; |Block2|addr[2]              ; out              ;
+; |Block2|lpm_ram_io:inst1|_~1 ; |Block2|lpm_ram_io:inst1|_~1 ; out0             ;
+; |Block2|Block1:inst|inst103  ; |Block2|Block1:inst|inst103  ; out0             ;
+; |Block2|Block1:inst|inst88   ; |Block2|Block1:inst|inst88   ; out0             ;
+; |Block2|Block1:inst|inst104  ; |Block2|Block1:inst|inst104  ; out0             ;
+; |Block2|Block1:inst|inst91   ; |Block2|Block1:inst|inst91   ; out0             ;
+; |Block2|Block1:inst|inst105  ; |Block2|Block1:inst|inst105  ; out0             ;
+; |Block2|Block1:inst|inst94   ; |Block2|Block1:inst|inst94   ; out0             ;
+; |Block2|Block1:inst|inst106  ; |Block2|Block1:inst|inst106  ; out0             ;
+; |Block2|Block1:inst|inst97   ; |Block2|Block1:inst|inst97   ; out0             ;
++------------------------------+------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                   ;
++-------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                             ; Output Port Name                                                                                ; Output Port Type ;
++-------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+------------------+
+; |Block2|readed_data[7]                                                                                ; |Block2|readed_data[7]                                                                          ; pin_out          ;
+; |Block2|readed_data[6]                                                                                ; |Block2|readed_data[6]                                                                          ; pin_out          ;
+; |Block2|readed_data[5]                                                                                ; |Block2|readed_data[5]                                                                          ; pin_out          ;
+; |Block2|readed_data[4]                                                                                ; |Block2|readed_data[4]                                                                          ; pin_out          ;
+; |Block2|inst8[7]                                                                                      ; |Block2|inst8[7]                                                                                ; out              ;
+; |Block2|inst8[6]                                                                                      ; |Block2|inst8[6]                                                                                ; out              ;
+; |Block2|inst8[5]                                                                                      ; |Block2|inst8[5]                                                                                ; out              ;
+; |Block2|inst8[4]                                                                                      ; |Block2|inst8[4]                                                                                ; out              ;
+; |Block2|rst                                                                                           ; |Block2|rst                                                                                     ; out              ;
+; |Block2|data[7]                                                                                       ; |Block2|data[7]                                                                                 ; out              ;
+; |Block2|data[6]                                                                                       ; |Block2|data[6]                                                                                 ; out              ;
+; |Block2|data[5]                                                                                       ; |Block2|data[5]                                                                                 ; out              ;
+; |Block2|data[4]                                                                                       ; |Block2|data[4]                                                                                 ; out              ;
+; |Block2|ram_o[7]                                                                                      ; |Block2|ram_o[7]                                                                                ; out0             ;
+; |Block2|ram_o[6]                                                                                      ; |Block2|ram_o[6]                                                                                ; out0             ;
+; |Block2|ram_o[5]                                                                                      ; |Block2|ram_o[5]                                                                                ; out0             ;
+; |Block2|ram_o[4]                                                                                      ; |Block2|ram_o[4]                                                                                ; out0             ;
+; |Block2|inst7[7]                                                                                      ; |Block2|inst7[7]                                                                                ; out              ;
+; |Block2|inst7[6]                                                                                      ; |Block2|inst7[6]                                                                                ; out              ;
+; |Block2|inst7[5]                                                                                      ; |Block2|inst7[5]                                                                                ; out              ;
+; |Block2|inst7[4]                                                                                      ; |Block2|inst7[4]                                                                                ; out              ;
+; |Block2|addr[3]                                                                                       ; |Block2|addr[3]                                                                                 ; out              ;
+; |Block2|addr[1]                                                                                       ; |Block2|addr[1]                                                                                 ; out              ;
+; |Block2|addr[0]                                                                                       ; |Block2|addr[0]                                                                                 ; out              ;
+; |Block2|lpm_dff0:inst2|lpm_ff:lpm_ff_component|dffs[3]                                                ; |Block2|lpm_dff0:inst2|lpm_ff:lpm_ff_component|dffs[3]                                          ; regout           ;
+; |Block2|lpm_dff0:inst2|lpm_ff:lpm_ff_component|dffs[1]                                                ; |Block2|lpm_dff0:inst2|lpm_ff:lpm_ff_component|dffs[1]                                          ; regout           ;
+; |Block2|lpm_dff0:inst2|lpm_ff:lpm_ff_component|dffs[0]                                                ; |Block2|lpm_dff0:inst2|lpm_ff:lpm_ff_component|dffs[0]                                          ; regout           ;
+; |Block2|lpm_ram_io:inst1|datatri[7]                                                                   ; |Block2|lpm_ram_io:inst1|datatri[7]                                                             ; out              ;
+; |Block2|lpm_ram_io:inst1|datatri[6]                                                                   ; |Block2|lpm_ram_io:inst1|datatri[6]                                                             ; out              ;
+; |Block2|lpm_ram_io:inst1|datatri[5]                                                                   ; |Block2|lpm_ram_io:inst1|datatri[5]                                                             ; out              ;
+; |Block2|lpm_ram_io:inst1|datatri[4]                                                                   ; |Block2|lpm_ram_io:inst1|datatri[4]                                                             ; out              ;
+; |Block2|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_0k71:auto_generated|ram_block1a4 ; |Block2|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_0k71:auto_generated|q_a[4] ; portadataout0    ;
+; |Block2|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_0k71:auto_generated|ram_block1a5 ; |Block2|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_0k71:auto_generated|q_a[5] ; portadataout0    ;
+; |Block2|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_0k71:auto_generated|ram_block1a6 ; |Block2|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_0k71:auto_generated|q_a[6] ; portadataout0    ;
+; |Block2|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_0k71:auto_generated|ram_block1a7 ; |Block2|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_0k71:auto_generated|q_a[7] ; portadataout0    ;
+; |Block2|Block1:inst|inst84                                                                            ; |Block2|Block1:inst|inst84                                                                      ; regout           ;
+; |Block2|Block1:inst|inst86                                                                            ; |Block2|Block1:inst|inst86                                                                      ; out0             ;
+; |Block2|Block1:inst|inst102                                                                           ; |Block2|Block1:inst|inst102                                                                     ; out0             ;
+; |Block2|Block1:inst|inst85                                                                            ; |Block2|Block1:inst|inst85                                                                      ; out0             ;
+; |Block2|Block1:inst|inst81                                                                            ; |Block2|Block1:inst|inst81                                                                      ; regout           ;
+; |Block2|Block1:inst|inst83                                                                            ; |Block2|Block1:inst|inst83                                                                      ; out0             ;
+; |Block2|Block1:inst|inst101                                                                           ; |Block2|Block1:inst|inst101                                                                     ; out0             ;
+; |Block2|Block1:inst|inst82                                                                            ; |Block2|Block1:inst|inst82                                                                      ; out0             ;
+; |Block2|Block1:inst|inst78                                                                            ; |Block2|Block1:inst|inst78                                                                      ; regout           ;
+; |Block2|Block1:inst|inst80                                                                            ; |Block2|Block1:inst|inst80                                                                      ; out0             ;
+; |Block2|Block1:inst|inst100                                                                           ; |Block2|Block1:inst|inst100                                                                     ; out0             ;
+; |Block2|Block1:inst|inst79                                                                            ; |Block2|Block1:inst|inst79                                                                      ; out0             ;
+; |Block2|Block1:inst|inst75                                                                            ; |Block2|Block1:inst|inst75                                                                      ; regout           ;
+; |Block2|Block1:inst|inst77                                                                            ; |Block2|Block1:inst|inst77                                                                      ; out0             ;
+; |Block2|Block1:inst|inst99                                                                            ; |Block2|Block1:inst|inst99                                                                      ; out0             ;
+; |Block2|Block1:inst|inst76                                                                            ; |Block2|Block1:inst|inst76                                                                      ; out0             ;
++-------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                   ;
++-------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                             ; Output Port Name                                                                                ; Output Port Type ;
++-------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+------------------+
+; |Block2|readed_data[3]                                                                                ; |Block2|readed_data[3]                                                                          ; pin_out          ;
+; |Block2|readed_data[2]                                                                                ; |Block2|readed_data[2]                                                                          ; pin_out          ;
+; |Block2|readed_data[1]                                                                                ; |Block2|readed_data[1]                                                                          ; pin_out          ;
+; |Block2|readed_data[0]                                                                                ; |Block2|readed_data[0]                                                                          ; pin_out          ;
+; |Block2|inst8[3]                                                                                      ; |Block2|inst8[3]                                                                                ; out              ;
+; |Block2|inst8[2]                                                                                      ; |Block2|inst8[2]                                                                                ; out              ;
+; |Block2|inst8[1]                                                                                      ; |Block2|inst8[1]                                                                                ; out              ;
+; |Block2|inst8[0]                                                                                      ; |Block2|inst8[0]                                                                                ; out              ;
+; |Block2|rst                                                                                           ; |Block2|rst                                                                                     ; out              ;
+; |Block2|data[7]                                                                                       ; |Block2|data[7]                                                                                 ; out              ;
+; |Block2|data[6]                                                                                       ; |Block2|data[6]                                                                                 ; out              ;
+; |Block2|data[5]                                                                                       ; |Block2|data[5]                                                                                 ; out              ;
+; |Block2|data[4]                                                                                       ; |Block2|data[4]                                                                                 ; out              ;
+; |Block2|ram_o[3]                                                                                      ; |Block2|ram_o[3]                                                                                ; out0             ;
+; |Block2|ram_o[2]                                                                                      ; |Block2|ram_o[2]                                                                                ; out0             ;
+; |Block2|ram_o[1]                                                                                      ; |Block2|ram_o[1]                                                                                ; out0             ;
+; |Block2|ram_o[0]                                                                                      ; |Block2|ram_o[0]                                                                                ; out0             ;
+; |Block2|inst7[3]                                                                                      ; |Block2|inst7[3]                                                                                ; out              ;
+; |Block2|inst7[2]                                                                                      ; |Block2|inst7[2]                                                                                ; out              ;
+; |Block2|inst7[1]                                                                                      ; |Block2|inst7[1]                                                                                ; out              ;
+; |Block2|inst7[0]                                                                                      ; |Block2|inst7[0]                                                                                ; out              ;
+; |Block2|addr[3]                                                                                       ; |Block2|addr[3]                                                                                 ; out              ;
+; |Block2|addr[1]                                                                                       ; |Block2|addr[1]                                                                                 ; out              ;
+; |Block2|addr[0]                                                                                       ; |Block2|addr[0]                                                                                 ; out              ;
+; |Block2|lpm_dff0:inst2|lpm_ff:lpm_ff_component|dffs[3]                                                ; |Block2|lpm_dff0:inst2|lpm_ff:lpm_ff_component|dffs[3]                                          ; regout           ;
+; |Block2|lpm_dff0:inst2|lpm_ff:lpm_ff_component|dffs[2]                                                ; |Block2|lpm_dff0:inst2|lpm_ff:lpm_ff_component|dffs[2]                                          ; regout           ;
+; |Block2|lpm_dff0:inst2|lpm_ff:lpm_ff_component|dffs[1]                                                ; |Block2|lpm_dff0:inst2|lpm_ff:lpm_ff_component|dffs[1]                                          ; regout           ;
+; |Block2|lpm_dff0:inst2|lpm_ff:lpm_ff_component|dffs[0]                                                ; |Block2|lpm_dff0:inst2|lpm_ff:lpm_ff_component|dffs[0]                                          ; regout           ;
+; |Block2|lpm_ram_io:inst1|datatri[3]                                                                   ; |Block2|lpm_ram_io:inst1|datatri[3]                                                             ; out              ;
+; |Block2|lpm_ram_io:inst1|datatri[2]                                                                   ; |Block2|lpm_ram_io:inst1|datatri[2]                                                             ; out              ;
+; |Block2|lpm_ram_io:inst1|datatri[1]                                                                   ; |Block2|lpm_ram_io:inst1|datatri[1]                                                             ; out              ;
+; |Block2|lpm_ram_io:inst1|datatri[0]                                                                   ; |Block2|lpm_ram_io:inst1|datatri[0]                                                             ; out              ;
+; |Block2|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_0k71:auto_generated|ram_block1a0 ; |Block2|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_0k71:auto_generated|q_a[0] ; portadataout0    ;
+; |Block2|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_0k71:auto_generated|ram_block1a1 ; |Block2|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_0k71:auto_generated|q_a[1] ; portadataout0    ;
+; |Block2|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_0k71:auto_generated|ram_block1a2 ; |Block2|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_0k71:auto_generated|q_a[2] ; portadataout0    ;
+; |Block2|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_0k71:auto_generated|ram_block1a3 ; |Block2|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_0k71:auto_generated|q_a[3] ; portadataout0    ;
+; |Block2|Block1:inst|inst87                                                                            ; |Block2|Block1:inst|inst87                                                                      ; regout           ;
+; |Block2|Block1:inst|inst89                                                                            ; |Block2|Block1:inst|inst89                                                                      ; out0             ;
+; |Block2|Block1:inst|inst90                                                                            ; |Block2|Block1:inst|inst90                                                                      ; regout           ;
+; |Block2|Block1:inst|inst92                                                                            ; |Block2|Block1:inst|inst92                                                                      ; out0             ;
+; |Block2|Block1:inst|inst93                                                                            ; |Block2|Block1:inst|inst93                                                                      ; regout           ;
+; |Block2|Block1:inst|inst95                                                                            ; |Block2|Block1:inst|inst95                                                                      ; out0             ;
+; |Block2|Block1:inst|inst96                                                                            ; |Block2|Block1:inst|inst96                                                                      ; regout           ;
+; |Block2|Block1:inst|inst98                                                                            ; |Block2|Block1:inst|inst98                                                                      ; out0             ;
+; |Block2|Block1:inst|inst102                                                                           ; |Block2|Block1:inst|inst102                                                                     ; out0             ;
+; |Block2|Block1:inst|inst101                                                                           ; |Block2|Block1:inst|inst101                                                                     ; out0             ;
+; |Block2|Block1:inst|inst100                                                                           ; |Block2|Block1:inst|inst100                                                                     ; out0             ;
+; |Block2|Block1:inst|inst99                                                                            ; |Block2|Block1:inst|inst99                                                                      ; out0             ;
++-------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Wed Apr 23 18:32:55 2025
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off kurs_Sxem -c kurs_Sxem
+Info: Using vector source file "C:/altera/91/quartus/projects/kurs_Sxem32/kurs_Sxem.vwf"
+Warning: Ignored node in vector source file. Can't find corresponding node name "addr[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data[15]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data[14]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data[13]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data[12]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data[11]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data[10]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data[9]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data[8]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "readed_data[15]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "readed_data[14]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "readed_data[13]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "readed_data[12]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "readed_data[11]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "readed_data[10]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "readed_data[9]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "readed_data[8]" in design.
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found clock-sensitive change during active clock edge at time 620.0 ns on register "|Block2|lpm_dff0:inst2|lpm_ff:lpm_ff_component|dffs[2]"
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      18.45 %
+Info: Number of transitions in simulation is 338
+Info: Quartus II Simulator was successful. 0 errors, 18 warnings
+    Info: Peak virtual memory: 143 megabytes
+    Info: Processing ended: Wed Apr 23 18:32:55 2025
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

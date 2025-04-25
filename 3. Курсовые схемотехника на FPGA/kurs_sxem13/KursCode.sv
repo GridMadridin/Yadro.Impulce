@@ -1,0 +1,29 @@
+module KursCode (
+	input clk,
+	input wire [3:0] A,
+	output wire [3:0] B,
+	output wire incorrect,
+	output wire [3:0] Sum
+);
+	wire incorrectA;
+	wire incorrectB;
+	Logic m_logic(
+		.inputCode(A),
+		.outputCode(B)
+	);
+	InputAnalyzer m_inputAnalyzer(
+		.inputCode(A),
+		.result(incorrectA)
+	);
+	OutputAnalyzer m_outputAnalyzer(
+		.outputCode(B),
+		.result(incorrectB)
+	);
+	assign incorrect = incorrectA || incorrectB;
+	always @(posedge clk) begin
+	if (incorrect==0 & B!=0) begin
+		if (B[0]==1'b1) Sum=Sum-1;
+		else Sum=Sum+1;
+		end
+		end
+endmodule
